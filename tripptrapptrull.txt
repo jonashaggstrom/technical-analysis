@@ -38,19 +38,19 @@ closeHt5=request.security(syminfo.tickerid,ht5, ta.valuewhen(barstate.isconfirme
 //labels
 bullHt1=closeHt1 > openHt1
 if lblHt1 and ta.change(bullHt1)
-    label.new(bar_index, bullHt1?low:high, bullHt1?"B1":"S1", color = bullHt1?color.green:color.red, style = bullHt1?label.style_label_up:label.style_label_down, size = size.tiny, yloc = bullHt1?yloc.belowbar:yloc.abovebar)
+    label.new(bar_index, bullHt1?low:high, ht1, color = bullHt1?color.green:color.red, style = bullHt1?label.style_label_up:label.style_label_down, size = size.tiny, yloc = bullHt1?yloc.belowbar:yloc.abovebar)
 bullHt2=closeHt2 > openHt2
 if lblHt2 and ta.change(bullHt2)
-    label.new(bar_index, bullHt2?low:high, bullHt2?"B2":"S2", color = bullHt2?color.green:color.red, style = bullHt2?label.style_label_up:label.style_label_down, size = size.small, yloc = bullHt2?yloc.belowbar:yloc.abovebar)
+    label.new(bar_index, bullHt2?low:high, ht2, color = bullHt2?color.green:color.red, style = bullHt2?label.style_label_up:label.style_label_down, size = size.small, yloc = bullHt2?yloc.belowbar:yloc.abovebar)
 bullHt3=closeHt3 > openHt3
 if lblHt3 and ta.change(bullHt3)
-    label.new(bar_index, bullHt3?low:high, bullHt3?"B3":"S3", color = bullHt3?color.green:color.red, style = bullHt3?label.style_label_up:label.style_label_down, size = size.small, yloc = bullHt3?yloc.belowbar:yloc.abovebar)
+    label.new(bar_index, bullHt3?low:high, ht3, color = bullHt3?color.green:color.red, style = bullHt3?label.style_label_up:label.style_label_down, size = size.small, yloc = bullHt3?yloc.belowbar:yloc.abovebar)
 bullHt4=closeHt4 > openHt4
 if lblHt4 and ta.change(bullHt4)
-    label.new(bar_index, bullHt4?low:high, bullHt4?"B4":"S4", color = bullHt4?color.green:color.red, style = bullHt4?label.style_label_up:label.style_label_down, size = size.small, yloc = bullHt4?yloc.belowbar:yloc.abovebar)
+    label.new(bar_index, bullHt4?low:high, ht4, color = bullHt4?color.green:color.red, style = bullHt4?label.style_label_up:label.style_label_down, size = size.small, yloc = bullHt4?yloc.belowbar:yloc.abovebar)
 bullHt5=closeHt5 > openHt5
 if lblHt5 and ta.change(bullHt5)
-    label.new(bar_index, bullHt5?low:high, bullHt5?"B5":"S5", color = bullHt5?color.green:color.red, style = bullHt5?label.style_label_up:label.style_label_down, size = size.small, yloc = bullHt5?yloc.belowbar:yloc.abovebar)
+    label.new(bar_index, bullHt5?low:high, ht5, color = bullHt5?color.green:color.red, style = bullHt5?label.style_label_up:label.style_label_down, size = size.small, yloc = bullHt5?yloc.belowbar:yloc.abovebar)
 
 //display table
 var tbl = table.new(position.bottom_right, 2, 7)
