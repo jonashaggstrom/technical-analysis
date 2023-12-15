@@ -1,5 +1,8 @@
 # technical-analysis
-indicators,strategies, templates etc
+indicators,strategies, templates etc for tradingview
+
+## usage
+just copy paste the code into a new tradingview indicator/strategy or use some import feature
 
 ## tripptrapptrull
 Gives dashboard for higher timeframe close and label indicating higher timeframe close status
