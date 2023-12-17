@@ -1,21 +1,8 @@
 // This source code is subject to the terms of the Mozilla Public License 2.0 at https://mozilla.org/MPL/2.0/
-// © pikebay
+// © pikebay aug 2022
 
 //@version=5
 indicator("AtrStop[Pikebay]", overlay=true)
-//ATR
-
-// Atr=input.int(9,title="AtrPeriod",minval=1,maxval=500, inline="atrstop")
-// Hhv=input.int(10,title="HHVPeriod",minval=1,maxval=500, inline="atrstop")
-// Mult=input.float(0.5,title="Mult",minval=0.1, inline="atrstop")
-
-//calc
-//ATR1
-// Prev = ta.highest(high-Mult*ta.atr(Atr),Hhv),ta.barssince(close>ta.highest(high-Mult*ta.atr(Atr),Hhv) and close>close[1])
-// tmpSeries=high-Mult*ta.atr(Atr)
-// tmp= ta.highest(tmpSeries,Hhv)
-// atr1 = request.security(syminfo.tickerid, ht1, ta.cum(1)<16?close:(close > tmp and close>close[1])?tmp:Prev)
-
 
 //VWAP
 cumulativePeriod = input(5, "Period", inline="atrinputs")
